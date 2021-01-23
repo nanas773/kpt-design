@@ -15,10 +15,10 @@ jobs:
       - name: Convert test file to png image
         uses: Burnett01/actions-drawio@1.0
         with:
-          src: database-er-diagram.drawio
-          dest: database-er-diagram.png
+          src: database_er_diagram.drawio
+          dest: database_er_diagram.png
       - name: Upload image as artifact
         uses: actions/upload-artifact@v1
         with:
           name: png
-          path: database-er-diagram.png
+          path: database_er_diagram.png
